@@ -1,0 +1,93 @@
+/* ****************************************************************************************************  Media Queries  *********************************************
+******************************************************************** */
+
+@media screen and (min-width: 576px) {
+
+    /* ------------- Navbar Start ----------------- */
+
+    .navbar__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar__container li {flex: 1 0 auto;}
+    .logo i {display: none;} 
+
+    .logo li a {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        padding: 15px 45px;
+    }
+
+    /* -------------- Navbar End ----------------- */
+
+
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .portfolio-center-footer {
+        font-size: 1rem;
+    }
+
+    .project-center-title {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .all-post {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1em;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-project img {display: block;}
+
+
+    .all-post {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media screen and (min-width: 776px) {
+    .all-service {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service3 {order: 1;}
+
+    .end {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

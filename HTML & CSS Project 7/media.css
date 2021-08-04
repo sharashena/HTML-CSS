@@ -1,0 +1,127 @@
+/* Media */
+
+/* Navbar Start */
+
+@media screen and (min-width: 992px) {
+    .navbar__container {
+        height: auto;
+        background-color: var(--SectionWhite);
+        border: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar__container li a:hover {
+        padding-left: 20px;
+        color: var(--dark);
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 8px solid var(--dark);
+    }
+
+    .nav-btn {display: none;}
+}
+
+/* Navbar End */
+
+
+/* About Start */
+
+@media screen and (min-width: 992px) {
+    .all-about {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 30px;
+             column-gap: 30px;
+    }
+
+    .about-section {
+        padding-bottom: 5rem;
+    }
+}
+
+/* About End */
+
+
+/* Services Start */
+
+@media screen and (min-width: 776px) {
+    .all-service {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service {
+        flex: 0 1 calc(50% - 1rem);
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .service {flex: 0 1 calc(35% - 2.5rem);}
+}
+
+/* Services End */
+
+
+
+/* Numbers Start */
+
+@media screen and (min-width: 576px) {
+    .all-number {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .all-number {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Numbers End */
+
+
+
+/* Projects Start */
+
+@media screen and (min-width: 776px) {
+    .all-project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .project {
+        flex: 0 1 calc(50% - 1rem);
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .project {flex: 0 1 calc(25% - 1rem);}
+    .project span {font-size: 5rem;}
+}
+
+/* Projects End */
+
+
+/* Contact Start */
+
+@media screen and (min-width: 576px) {
+    .text-and-email {display: flex;}
+    .text-and-email input:first-child {margin-right: 40px;}
+}
+
+/* Contact End */

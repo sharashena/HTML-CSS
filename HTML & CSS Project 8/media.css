@@ -1,0 +1,26 @@
+/* Media */
+
+/* Song List Start */
+
+@media screen and (min-width: 576px) {
+    .all-song {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .all-song {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media screen and (min-width: 992px) {
+    .all-song {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
+
+/* Song List End */

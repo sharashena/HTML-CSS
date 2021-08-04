@@ -1,0 +1,491 @@
+:root {
+    --mainBlack : #191716;
+    --lightYellow : #e6af2e;
+    --grey : #beb7a4;
+    --mainWhite : #e0e2db;
+    --mainTransition : all .3s ease-out;
+    --mainSpacing : 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --------- Navbar ----------- */
+
+.navbar {
+    border-top: 6px solid var(--lightYellow);
+    background-color: var(--mainBlack);
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar__container li {list-style: none;}
+.navbar__container li a:hover {color: var(--mainWhite);}
+
+.navbar__container li a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    color: var(--lightYellow);
+    transition: var(--mainTransition);
+    font-size: 1.3rem;
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+} 
+
+.navbar__container li a:hover:not(.logo li a) {
+    background-color: var(--lightYellow);
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lightYellow);
+}
+
+.logo:hover {background-color: var(--mainWhite);}
+.logo:hover li a {color: var(--lightYellow);}
+.logo li a {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--mainBlack);
+}
+
+/* -------------- Media Query ------------------- */
+
+
+/* -------------- Navbar End --------------- */
+
+/* -------------- Section 1 Start --------------- */
+
+.section1 {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)),
+    url(./images/background-banner.jpg) center/cover fixed;
+    width: 100%;
+    height: 90vh;
+}
+
+.web-agency {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: var(--mainSpacing);
+}
+
+.main-title {
+    color: var(--mainWhite);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.border {
+    border: 3px solid var(--mainBlack);
+    width: 200px;
+    margin: 15px auto;
+}
+
+.buttons {margin-top: 40px;}
+.btn:first-child {margin-right: 10px;}
+
+.btn {
+    border: 3px solid var(--lightYellow);
+    font-size: 1.5rem;
+    padding: 15px;
+    color: var(--lightYellow);
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+}
+
+.btn:hover {
+    background-color: var(--lightYellow);
+    color: var(--mainWhite);
+}
+
+/* ----------------- Section 1 End ---------------- */
+
+
+/* ----------------- Section 2 Start ---------------- */
+
+.section2 {
+    background-color: #beb7a4;
+    padding-bottom: 6rem;
+}
+
+.code {text-align: center;}
+
+.icon-title {
+    color: var(--lightYellow);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: var(--mainSpacing);
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.main-text {
+    color: var(--mainWhite);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ----------------- Section 2 End ---------------- */
+
+
+/* ----------------- Section 3 Start ---------------- */
+
+.section3 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+    url(./images/services.jpeg) center/cover fixed;
+    padding-bottom: 5rem;
+}
+
+.service-title {
+    position: relative;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.services {
+    color: var(--mainWhite);
+    padding-left: 30px;
+    padding-right: 20px;
+    overflow: hidden;
+    height: 35vh;
+}
+
+.services:hover .title {transform: translateY(-200px);}
+.services:hover i {transform: translateY(-200px);}
+
+.services:hover .service-btn {transform: translateY(-230px);}
+.services:hover .text {transform: translateY(-230px);}
+.service1,
+.service3 {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.service1 .service-btn,
+.service3 .service-btn {background-color: transparent;}
+
+.service2,
+.service4 {
+    background-image: linear-gradient(rgba(255,255,255, 0.3), rgba(255,255,255,.5));
+    color: var(--mainBlack);
+    font-weight: 600;
+}
+
+.service2 .service-btn,
+.service4 .service-btn {color: var(--mainBlack);}
+
+.service2:hover .service-btn:hover,
+.service4:hover .service-btn:hover {
+    background-color: var(--mainBlack);
+    color: var(--lightYellow);
+    border: 3px solid var(--mainBlack);
+}
+
+.service-btn, .text {transform: translateY(50%);}
+.services i, .title {transform: translateY(50%);}
+
+.services > i {
+    color: var(--lightYellow);
+    font-size: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    transition: all 1s linear;
+}
+
+.title {
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 1s linear;
+}
+
+.text {
+    margin-bottom: 1rem;
+    text-align: left;
+    transition: all 1s linear;
+    position: relative;
+    top: 50%;
+    width: 90%;
+}
+
+.service-border {border-color: var(--lightYellow);}
+
+.service-btn {
+    text-decoration: none;
+    color: var(--mainWhite);
+    background-color: var(--lightYellow);
+    border: 3px solid var(--lightYellow);
+    padding: 10px 25px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    display: inline-block;
+    text-align: left;
+    transition: all 1s linear;
+    position: relative;
+    top: 50%;
+}
+
+.service-btn:hover {
+    background-color: var(--lightYellow);
+    color: var(--mainWhite);
+}
+
+.all-service {padding: 0 50px;}
+
+/* ----------------- Section 3 End ---------------- */
+
+/* ----------------- Section 4 Start ---------------- */
+
+.section4 {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4rem;
+    background-color: #BEB7A4;
+}
+
+.portfolio-title {
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.portfolio-project img {
+    width: 100%;
+    display: block;
+    transition: all 2s;
+    cursor: pointer;
+    height: 100%;
+}
+.portfolio-project:hover img {
+    opacity: .5;
+    transform: scale(1.3);
+}
+
+.portfolio-project:hover .portfolio-center-footer,
+.portfolio-project:hover .project-footer {transition: opacity 2s; opacity: 1;}
+
+.portfolio-border {
+    border-color: var(--lightYellow);
+    margin-bottom: 2rem;
+}
+
+.portfolio-project {
+    position: relative;
+    background-color: var(--mainBlack);
+    overflow: hidden;
+    transition: var(--mainTransition);
+    margin-bottom: 1rem;
+}
+
+.portfolio-center-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.project-center-title {
+    color: var(--mainWhite);
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.project-center-text {
+    color: var(--mainWhite);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+    text-transform: capitalize;
+    color: var(--lightYellow);
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+/* ----------------- Section 4 End ---------------- */
+
+
+
+/* ----------------- Section 5 Start ---------------- */
+
+.section5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/filler.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.contact-title {color: var(--mainWhite); margin-right: 20px;}
+
+/* .contact-btn {font-size: 1rem;} */
+
+/* ----------------- Section 5 End ---------------- */
+
+
+
+/* ----------------- Section 6 Start -------------- */
+
+.section6 {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    background-color: #BEB7A4;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-style: italic;
+    padding-top: 2rem;
+}
+
+.footer-border {border-color: var(--lightYellow);}
+
+.all-post {padding: 20px;}
+.first-one {
+    position: relative;
+    background-color: var(--mainBlack);
+}
+.post {
+    background-color: var(--mainWhite);
+    margin-bottom: 2rem;
+}
+
+.first-one i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--lightYellow);
+    opacity: 0;
+}
+
+.second-one {
+    margin-bottom: 2rem;
+}
+
+.work-title {
+    margin: 10px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.work-text {
+    font-size: .9rem;
+    margin: 20px 10px;
+}
+
+.work-btn {
+    margin: 20px 10px;
+    padding: 5px 5px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+}
+
+.work-btn:hover {
+    background-color: var(--mainBlack);
+    color: var(--lightYellow);
+    border: 3px solid var(--mainBlack);
+}
+
+.first-one img {
+    width: 100%;
+    display: block;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+
+.first-one:hover img {opacity: .5;}
+.first-one:hover i {
+    opacity: 1;
+    transition-delay: .3s;
+    transition-duration: 3s;
+}
+
+/* ----------------- Section 6 End -------------- */
+
+
+/* ----------------- End ------------------- */
+
+
+.final-section {
+    background-color: var(--mainBlack);
+    color: white;
+    padding: 20px;
+}
+
+.copyright {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.end-icons span {
+    margin-right: 10px;
+    font-size: 2rem;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.end-icons span:hover {
+    color: var(--lightYellow);
+    transform: translateY(-10px);
+}

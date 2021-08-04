@@ -1,0 +1,620 @@
+:root {
+    --lightBlue : #2b98f0;
+    --mainSpacing : 2px;
+    --mainGrey : #575757;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ****************** Section 1 Start ******************** */
+
+.section-center {padding: 10px;}
+
+.section1 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(./images/banner-img.jpeg) center/cover fixed;
+    color: #f5f5f5;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    z-index: 99;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 3px 10px black;
+    transition: all 1s linear;
+    -webkit-animation: appear 1s;
+            animation: appear 1s;
+}
+
+@-webkit-keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.navbar__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.navbar__container li {
+    list-style: none;
+    padding: 10px 0;
+    display: block;
+    flex: 1 1 125px;
+    text-align: center;
+}
+
+.navbar__container li a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--lightBlue);
+    font-size: 1.3rem;
+    transition: background-color 1s ease, color 1.3s ease-in-out;
+}
+
+.navbar__container li a:hover {
+    background-color: var(--lightBlue);
+    color: #f5f5f5;
+}
+
+.logo-text {
+    border: 3px solid var(--lightBlue);
+    padding: 5px;
+    font-size: 1.2rem;
+    color: var(--lightBlue);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.logo-text:hover {
+    background-color: var(--lightBlue);
+    color: #f5f5f5;
+}
+
+.nav-search {
+    background-color: #395E7E;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    padding: 11.2px;
+    transition: 1s ease-out;
+}
+
+.nav-search:hover {background-color: var(--lightBlue);}
+
+.hamburger {
+    padding: 5px;
+    margin-right: 15px;
+    border: 3px solid var(--lightBlue);
+    cursor: pointer;
+    display: none;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 40px;
+    height: 5px;
+    background-color: var(--lightBlue);
+    margin-bottom: 7px;
+    margin-top: 7px;
+    transition: all 2s ease;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section1-title {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.section1-border {
+    border: 3px ridge var(--lightBlue);
+    width: 200px;
+    margin: 1rem auto;
+}
+
+.section1-text {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #f5f5f5;
+    background-color: var(--lightBlue);
+    padding: 15px 10px;
+    letter-spacing: var(--mainSpacing);
+    margin-top: 2rem;
+    border: 3px solid var(--lightBlue);
+    transition: all 3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 3px solid #f5f5f5;
+}
+
+/* ********************* Section 1 End ********************** */
+
+
+
+/* ********************* Section 2 Start ******************** */
+
+.section2 {
+    padding: 50px;
+    padding-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--mainGrey);
+    cursor: pointer;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.section-border {
+    border: 3px ridge var(--lightBlue);
+    width: 50px;
+    cursor: pointer;
+}
+
+.skills-title {
+    margin-bottom: 4rem;
+    transition: all 4s ease-in, border 4s ease-out;
+}
+
+.skills-title:hover .section-border {width: 200px; border-color: red;}
+.section-border {transition: width 4s ease, border 4s ease;}
+
+.skill__container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skill__container i {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+    color: var(--lightBlue);
+    border-radius: 50%;
+    transition: transform .5s ease-in, background .5s ease;
+    cursor: pointer;
+}
+
+.skill__container i:hover {
+    background: var(--lightBlue);
+    color: #f5f5f5;
+    transform: scale(.7);
+}
+
+.skill-title {
+    color: var(--lightBlue);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.skill-info {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+/* ********************* Section 2 End ******************** */
+
+
+/*  ******************** Section 3 Start ****************** */
+
+.tutorial {
+    background-color: #C9C9C9;
+    padding: 80px;
+}
+
+.about-text {margin-bottom: 5rem;}
+
+.title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.info2 {margin: 2rem 0;}
+
+.about-btn {
+    padding: .5rem;
+    border: 2px solid var(--lightBlue);
+    transition: background .5s ease, border 1s ease;
+}
+
+.about-btn:hover {
+    background-color: transparent;
+    border: 2px solid #f5f5f5;
+}
+
+iframe {width: 100%;}
+
+/*  ******************** Section 3 End ******************** */
+
+
+/* ********************* Section 4 Start ****************** */
+
+.services {
+    padding: 50px;
+    padding-bottom: 3rem;
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+
+.service:nth-child(3) {
+    position: relative;
+    left: 16px;
+}
+
+.service:nth-child(6) .service-icon {
+    position: relative;
+    left: 10px;
+    margin-right: 13px;
+}
+.service:nth-child(3) .service-icon {margin-right: 11px;}
+.service-text > .service-info {line-height: 25px;}
+.service-text {margin-left: 15px; width: 60%;}
+
+.service {
+    display: flex;
+    margin: 30px 0;
+}
+
+.service:hover .service-icon,
+.service:hover .service-title {color: black;}
+.service:hover .service-info {color: #bbbbbb;}
+
+.service-text > h3 {
+    color: var(--lightBlue);
+    margin-bottom: .6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* ********************* Section 4 End ******************** */
+
+
+/* ********************* Section 5 Start ****************** */
+
+.portfolio {
+    padding: 50px;
+    background-color: #C9C9C9;
+    height: 100%;
+}
+
+.job {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.job-img img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 2s ease;
+}
+
+.job-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 25px 15px;
+    background-color: #939393;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 1s linear;
+    transform: translateY(100px);
+}
+
+.job:hover .job-info {
+    transform: translateY(0);
+}
+
+.job-img img:hover {opacity: .5;}
+
+.job-title {
+    color: #f5f5f5;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.job-icon a i {
+    color: var(--lightBlue);
+    font-size: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 2s ease, background-color 2s ease;
+}
+
+.job-icon a i:hover {
+    background-color: #082238;
+    transform: translateY(-10px);
+}
+
+.portfolio-btn {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.portfolio-btn:hover {
+    background-color: #f5f5f5;
+    color: var(--lightBlue);
+}
+
+/* ********************* Section 5 End ******************** */
+
+/* ********************* Section 6 Start ****************** */
+
+.numbers {padding: 50px;}
+.numbers .section-border {margin-bottom: 2rem;}
+
+.details {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: transform 1s linear;
+}
+
+.details:hover {transform: translateY(-10px);}
+
+.details i {
+    font-size: 4rem;
+    color: var(--lightBlue);
+    margin-bottom: 1rem;
+}
+
+.numbers-title {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.numbers-text {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #c9c9c9;
+}
+
+/* ********************* Section 6 End ******************** */
+
+
+/* ********************* Team Section Start ****************** */
+
+.team {
+    padding: 50px;
+    background-color: #959595;
+}
+
+.developer {
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+.team-img img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.team-footer {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-name {
+    text-transform: capitalize;
+    color: var(--lightBlue);
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.team-info {
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #959598;
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.developer-info i {
+    margin-left: 10px;
+    color: #959598;
+    cursor: pointer;
+}
+
+.team-icon i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--lightBlue);
+    transition: opacity 1s ease, transform 2s ease;
+    opacity: 0;
+}
+
+.developer:hover .team-icon i {opacity: 1;}
+.team-icon i:hover {transform: rotate(-90deg);}
+
+/* ********************* Team Section End ******************** */
+
+
+/* ********************* Customer Reviews Start ************** */
+
+.customers {
+    padding: 50px;
+    background-color: #191919;
+}
+
+.blog {
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.blog img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.blogger-name {
+    text-transform: capitalize;
+    color: var(--lightBlue);
+    margin-bottom: .5rem;
+}
+
+.blogger-info {
+    text-transform: uppercase;
+    color: #959598;
+    margin-bottom: 1rem;
+}
+
+.blogger-about {
+    width: 80%;
+    margin: 15px auto;
+    line-height: 27px;
+}
+
+/* ********************* Customer Reviews End **************** */
+
+
+/* ********************* Contact Start *********************** */
+
+.contact {
+    padding: 50px;
+    background-color: var(--lightBlue);
+    padding-bottom: .5rem;
+}
+
+.contact-border {border-color: #f5f5f5;}
+
+.my-info {
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    color: #f5f5f5;
+}
+
+.address-icon {
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+.address-info {font-size: 1.6rem;}
+
+.forms {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    margin-bottom: 1rem;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #f5f5f5;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.forms input::-webkit-input-placeholder {
+    text-transform: capitalize;
+    color: #f5f5f5;
+}
+
+.forms input::-moz-placeholder {
+    text-transform: capitalize;
+    color: #f5f5f5;
+}
+
+.forms input:-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #f5f5f5;
+}
+
+.forms input::-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #f5f5f5;
+}
+
+.forms input::placeholder {
+    text-transform: capitalize;
+    color: #f5f5f5;
+}
+
+
+.form-btn {
+    background-color: #202020;
+    display: flex;
+    justify-content: space-around;
+    transition: background-color 2s ease;
+    border: none;
+}
+
+.form-btn:hover {
+    background-color: #C9C9C9;
+    border: none;
+}
+
+/* ********************* Contact End ************************* */

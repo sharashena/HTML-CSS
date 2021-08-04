@@ -1,0 +1,97 @@
+@media screen and (min-width: 776px) {
+    .all-skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about {
+        display: flex;
+        background-color: #03243E;
+    }
+
+    .about-text {flex: 0 0 30%;}
+
+    .about-img {
+        flex: 0 0 70%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    }
+
+    .contact-center {
+        display: flex;
+    }
+
+    .contact-info {
+        flex: 0 0 calc(50% - 1rem);
+        padding: 100px 30px;
+    }
+    .second {flex: 0 0 50%;}
+}
+
+@media screen and (min-width: 992px) {
+    .banner {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .all-skill {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill:nth-child(1),
+    .skill:nth-child(2),
+    .skill:nth-child(4),
+    .skill:nth-child(5) {border-right: 1px solid white;}
+
+    .skill:nth-child(1),
+    .skill:nth-child(2),
+    .skill:nth-child(3) {border-bottom: 1px solid white;}
+
+
+    #logo {
+        width: 180px;
+    }
+
+    .hamburger {
+        background: transparent;
+        border: none;
+    }
+
+    .nav-btn {display: none;}
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 65%;
+
+    }
+
+    .navbar__container li a {
+        background: transparent;
+        font-size: 1.3rem;
+        padding: 20px 30px;
+    }
+
+    .navbar__container li a:hover {
+        padding-left: 30px;
+        border-radius: 5px;
+    }
+
+    .navbar {display: flex;}
+
+    .nav-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        width: 30%;
+    }
+
+    .nav-icons li {list-style: none;}
+
+    .nav-icons li a {
+        font-size: 2rem;
+        color: var(--lightBlue);
+    }
+}

@@ -1,0 +1,192 @@
+/* Media Queries */
+
+/* Navbar Start */
+
+@media screen and (min-width: 776px) {
+    .nav-logo i {display: none;}
+    .nav-logo img {padding: 20px 10px;}
+    .nav-icons {display: none;}
+    .navbar {display: flex; height: 55px;}
+
+    .links-icons {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-top: 5px solid var(--mainYellow);
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .links-icons li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links-icons li a {
+        padding: 0 39px;
+        border-radius: 5px;
+    }
+}
+
+/* Navbar End */
+
+/* Skills Start */
+
+@media screen and (min-width: 576px) {
+    .all-skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .all-skill {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Skills End */
+
+
+/* Form Start */
+
+@media screen and (min-width: 992px) {
+    .input-submit input {width: 50%;}
+}
+
+/* Form End */
+
+
+/* Portfolio Start */
+
+@media screen and (min-width: 992px) {
+    .picture__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Portfolio End */
+
+
+/* About Start */
+
+@media screen and (min-width: 776px) {
+    .about-img img {width: 60%;}
+
+    .about-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* About End */
+
+
+/* Projects Start */
+
+@media screen and (min-width: 576px) {
+    .all-project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .all-project {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Projects End */
+
+
+/* Numbers Start */
+
+@media screen and (min-width: 576px) {
+    #numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #numbers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Numbers End */
+
+
+
+/* Team Start */
+
+@media screen and (min-width: 576px) {
+    .all-team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team {flex: 0 1 calc(50% - 2rem);}
+}
+
+@media screen and (min-width: 992px) {
+    .team {
+        flex: 0 1 calc(25% - 1rem);
+        margin: 0 7px;
+    }
+
+    .all-team {padding: 50px;}
+    .team-section {padding-bottom: 5rem;}
+}
+
+/* Team End */
+
+
+/* Price Start */
+
+@media screen and (min-width: 776px) {
+    .all-price {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .all-price {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+/* Price End */
+
+
+/* Contact Start */
+
+@media screen and (min-width: 776px) {
+    .all-contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .contact {flex: 0 1 50%;}
+}
+
+/* Contact End */

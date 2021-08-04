@@ -1,0 +1,151 @@
+/* **************************************************************************************************
+************************************ Media *************************************************************
+****************************************************************************************************** */
+
+
+
+@media screen and (min-width: 576px) {
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skill__container {flex: 0 1 50%;}
+
+    .all-service {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service {flex: 0 1 50%;}
+
+    .all-jobs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .job {
+        flex: 0 1 calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+
+    .all-numbers {display: flex;}
+    .details {flex: 0 1 25%;}
+
+    .all-developer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .developer {
+        flex: 0 1 calc(50% - 1.5rem);
+        margin-right: 1.5rem;
+    }
+
+    .all-reviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blog {flex: 0 0 50%; margin-bottom: 1rem;}
+}
+
+
+@media screen and (min-width: 992px) {
+    .skill__container {flex: 0 1 25%;}
+
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    iframe {width: 75%; margin-left: 8rem;}
+    .about-text, .about-video {flex: 0 0 50%;}
+
+    .service {flex: 0 1 30%; margin: 30px auto;}
+    .service-text {width: 100%;}
+
+    .developer {flex: 0 1 calc(25% - 1.5rem);}
+
+    .blog {flex: 0 0 calc(30% - 1rem);}
+}
+
+@media screen and (min-width: 776px) {
+    .job {flex: 0 1 calc(33% - .5rem);}
+
+    .main-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .my-info, .forms {flex: 0 0 calc(49% - 10px);}
+    .our-info {margin-top: 50px;}
+    .my-info {margin-bottom: 1rem;}
+}
+
+@media screen and (max-width: 776px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .logo-hamburger {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin:0;
+        padding: 10px;
+    }
+
+    .navbar__container {
+        display: block;
+        text-align: left;
+        padding-left: 0;
+        margin: 10px 0 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 3s ease;
+        width: 0;
+    }
+
+    .navbar__container li {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .showNav .navbar__container {
+        height: 228px;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .navbar__container li a {
+        padding-left: 10px;
+        transition: padding-left 2s ease;
+    }
+
+    .navbar__container li a:hover {padding-left: 60px;}
+    .nav-search {display: none;}
+
+    .hamburger {display: block;}
+
+    .turn .line1 {
+        transform: rotate(45deg) translate(9px, 10px);
+        transition: all 2s ease;
+    }
+    .turn .line2 {opacity: 0; transition: all 2s ease;}
+    .turn .line3 {
+        transform: rotate(-45deg) translate(7px, -8px);
+        transition: all 2s ease;
+    }
+
+}
